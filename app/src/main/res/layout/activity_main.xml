@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/note1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_notes"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:hint="@string/note_1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/note2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/bg_notes"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:hint="@string/note_2"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:autofillHints=""
+        tools:ignore="RelativeOverlap" />
+
+    <EditText
+        android:id="@+id/note3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_notes"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:hint="@string/note_3"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/note4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/bg_notes"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:hint="@string/note_4"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/numberAbsences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_notes"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:hint="@string/numberAbsences"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberAbsences"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/calculate"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btCalculate"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold" />
+
+</RelativeLayout>
